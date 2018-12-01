@@ -1,3 +1,10 @@
+
+/* global style */
+
+body *{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
 a{
     color:#111;
     text-decoration: none;
@@ -9,15 +16,23 @@ ul{
 }
 ul li{
     display: inline-block;
+    /* float: left; */
 }
-#wrapper{}
+
+
+/* custom style */
+#wrapper{
+    max-width: 1100px;
+    width:100%;
+    margin: 0 auto;
+}
 
 #header{
     text-align: center;
-    padding: 60px 0 40px 0;
+    padding: 60px 0 60px 0;
 }
 #header a{
-    font-size: 40px;
+    font-size: 46px;
     color:#efefef;
     text-decoration: none;
 
@@ -25,35 +40,68 @@ ul li{
     font-weight: bold;
 }
 
-#nav{}
+#nav{
+    background-color: rgb(55,55,55);
+    overflow: hidden;
+    /* height: 60px; */
+}
 #nav ul{}
-#nav ul li{}
+#nav ul li{
+    padding: 20px;
+}
 #nav ul li a{
-
+    color:#fff;
 }
 
 #nav ul.menus{
     float: left;
+}
+#nav ul.menus li.active{
+    background-color: #fff;
+}
+#nav ul.menus li.active a{
+    color:#000;
 }
 #nav ul.icons{
     float: right;
 }
 
 
-#main{}
-#main .featured{}
+#main{
+    background-color: #fff;
+    padding: 40px; 
+}
+#main .featured{
+
+}
 #main .featured header{}
 #main .featured header h2{
     text-align: center;
-    padding: 40px 0 30px 0;
+    padding: 40px 0;
 }
-#main .featured header h2 a{}
+#main .featured header h2 a{
+    font-size: 30px;
+}
 #main .featured header a img{
     width: 100%;
 }
+#main .featured p{
+    margin: 25px 0;
+}
+
+
+#main .posts{}
+#main .posts ul{}
+#main .posts ul li{}
+#main .posts ul li img{width:100%}
+
+
+
 
 #footer{
     display: flex;
+    background-color: #eee;
+    padding: 40px;
 }
 #footer .contact, #footer .info{
     flex:1;
@@ -73,11 +121,12 @@ ul li{
 #footer .contact form .inputs input, #footer .contact form .inputs textarea{
     display: block;
     width:100%;
-    border:3px solid gray;
+    border:2px solid #ccc;
     box-sizing: border-box;
     margin-bottom: 30px;
 
     padding: 8px;
+    background-color: transparent;
 }
 
 #footer .contact form .submit{
@@ -96,6 +145,7 @@ ul li{
 }
 #footer .info section h3{
     flex:1;
+    padding-left:16px;
 }
 #footer .info section p{
     flex:2;
@@ -104,7 +154,7 @@ ul li{
     flex:2;
 }
 #footer .info section ul li{
-
+    padding: 10px 10px 10px 0;
 }
 
 #copyright{
@@ -119,4 +169,13 @@ ul li{
     color:inherit;
 }
 
-.bg{}
+.bg{
+   background: url("../images/background.png") no-repeat fixed center;
+   position: fixed;
+   top:0;
+   left: 0;
+   width: 100vw;
+   height: 100vh ;
+   z-index: -1;
+   opacity: 0.6;
+}
