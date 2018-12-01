@@ -1,0 +1,122 @@
+a{
+    color:#111;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    display: inline-block;
+}
+#wrapper{}
+
+#header{
+    text-align: center;
+    padding: 60px 0 40px 0;
+}
+#header a{
+    font-size: 40px;
+    color:#efefef;
+    text-decoration: none;
+
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#nav{}
+#nav ul{}
+#nav ul li{}
+#nav ul li a{
+
+}
+
+#nav ul.menus{
+    float: left;
+}
+#nav ul.icons{
+    float: right;
+}
+
+
+#main{}
+#main .featured{}
+#main .featured header{}
+#main .featured header h2{
+    text-align: center;
+    padding: 40px 0 30px 0;
+}
+#main .featured header h2 a{}
+#main .featured header a img{
+    width: 100%;
+}
+
+#footer{
+    display: flex;
+}
+#footer .contact, #footer .info{
+    flex:1;
+}
+
+#footer .contact{
+    padding: 16px;
+}
+#footer .contact form .inputs{
+    
+}
+#footer .contact form .inputs label{
+    display: block;
+    width: 100%;
+}
+
+#footer .contact form .inputs input, #footer .contact form .inputs textarea{
+    display: block;
+    width:100%;
+    border:3px solid gray;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+
+    padding: 8px;
+}
+
+#footer .contact form .submit{
+
+}
+#footer .contact form .submit input{
+    padding:16px 20px;
+    border:3px solid #333;
+    background-color: rgb(255,255,255)
+}
+#footer .info{
+    padding: 16px;
+}
+#footer .info section{
+    display:flex;
+}
+#footer .info section h3{
+    flex:1;
+}
+#footer .info section p{
+    flex:2;
+}
+#footer .info section ul{
+    flex:2;
+}
+#footer .info section ul li{
+
+}
+
+#copyright{
+    background-color: rgb(33,33,33);
+    padding: 20px;
+    text-align: center;
+}
+#copyright p{
+    color:#ccc;
+}
+#copyright p a{
+    color:inherit;
+}
+
+.bg{}
