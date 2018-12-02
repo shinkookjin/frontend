@@ -100,7 +100,7 @@
     1. 가입 후 오른쪽 위. new repository
         1-1) 이메일 인증 받을 것 (많이 늦음!!!!!!!!!!!!!).
         1-2) new repository 재시도 => 명령어를 Copy(복사)해서 터미널에서 우클릭(붙여넣기)
-    2. ternimal - new terminal 
+    2. ternimal - new terminal : 오른쪽 아래 customize(git 설치하면 뜸) 클릭, 위쪽에서 bash(리눅스 기반) 선택
         2-1) git init  등 입력
             git init            // 깃 명령어를 사용할 수 있는 디렉토리로 만든다. 초기에만
             git status          // 현재 상태를 훑어보고
@@ -139,6 +139,54 @@
 
 
  -->
+
+ 2일차
+<!-- 
+    협업을 위한 branch 개념
+    브랜치 : 나뭇가지? 작업의 흐름. 메인 작업인 master 말고 다른 흐름을 만들때 사용
+    git branch --help   : 도움말
+    git branch -v   : 현재 브랜치 버전
+    git checkout -b feature    : feature 브랜치로 생성'(-b) 및 이동
+    내용 바꾸고
+    git add .   : stage에 올리고
+    git commit -m "title fixed" : 로컬에 만들고
+    git puch -u origin feature  : feature로 푸쉬, github에서 확인해 보기
+    
+    git status  : 상태보기, 빨간글자는 add, 초록글자는 commit, 아니면 push 할것.
+
+    하나의 브랜치에서 여러명이 작업할 때 충돌날수도 있음. 
+-->
+
+    <!-- 
+        집에서도 작업하고 싶다면
+    github에서 (https://github.com/shinkookjin/frontend.git 주소를 복사하고)
+    내컴퓨터 D:에서 우클릭, Git Bash here 를 클릭하여 터미널열고,
+    git clone (http://~ 붙여넣기)   : 다운로드
+    cd frondend (레포지트리 이름)
+    git checkout feature   : feature로 이동하고, 작업하기 
+-->
+
+<!-- 공동작업하다가 생기는 문제 
+일단 강사님이 초대하면, 이메일로 승낙하고, 강사님 git 주소 복사하고
+d:test 우클릭, git bash here (터미널 열기)
+터미널에서 
+git clone (강사님 주소 붙여넣기)
+cd fronted-ui 
+비주얼스튜디오에서 open folder
+clone 하고 난뒤 강사님 소스 수정하고 올림
+나도 소스 수정하고 올림
+    터미널 열기
+    $ git add .
+    $ git commit -m "test"
+    $ git push -u origin master  :에러남. conflict 충돌
+    $ git pull   :동기화 내려받고, 
+    $ git push -u origin master   :다시 올리기. 성공 
+
+    $ git log -v   :로그 보기 또는 github 에서 commits 클릭하여 리스트 보기, Merge branch 성공
+-->
+
+type1.html ==> type1.js
+
 </body>
 </html>
 
